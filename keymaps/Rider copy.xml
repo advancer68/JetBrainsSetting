@@ -11,6 +11,17 @@
     <keyboard-shortcut first-keystroke="ctrl subtract" />
     <keyboard-shortcut first-keystroke="alt minus" />
   </action>
+  <action id="Console.Execute.Multiline" />
+  <action id="Console.Jdbc.Execute" />
+  <action id="Console.TableResult.EditValueMaximized">
+    <keyboard-shortcut first-keystroke="shift alt enter" />
+  </action>
+  <action id="EditorSplitLine">
+    <keyboard-shortcut first-keystroke="shift enter" />
+  </action>
+  <action id="EditorStartNewLine">
+    <keyboard-shortcut first-keystroke="ctrl enter" />
+  </action>
   <action id="ExpandAll">
     <keyboard-shortcut first-keystroke="ctrl add" />
   </action>
@@ -40,4 +51,8 @@
     <keyboard-shortcut first-keystroke="ctrl subtract" />
   </action>
   <action id="IpnbAddCellBelowAction" />
+  <action id="IpnbRunCellAction" />
+  <action id="IpnbRunCellInplaceAction" />
+  <action id="OpenElementInNewWindow" />
+  <action id="ViewSource" />
 </keymap>
