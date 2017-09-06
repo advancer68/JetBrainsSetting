@@ -51,6 +51,12 @@
     <mouse-shortcut keystroke="button2" />
     <keyboard-shortcut first-keystroke="alt g" />
   </action>
+  <action id="GotoNextBookmark">
+    <keyboard-shortcut first-keystroke="alt n" />
+  </action>
+  <action id="GotoPreviousBookmark">
+    <keyboard-shortcut first-keystroke="alt b" />
+  </action>
   <action id="Images.Editor.ZoomIn">
     <keyboard-shortcut first-keystroke="ctrl add" />
   </action>
