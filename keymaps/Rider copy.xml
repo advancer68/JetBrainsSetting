@@ -16,6 +16,7 @@
   <action id="Console.TableResult.EditValueMaximized">
     <keyboard-shortcut first-keystroke="shift alt enter" />
   </action>
+  <action id="Console.TableResult.NavigateExportedAction" />
   <action id="EditorSplitLine">
     <keyboard-shortcut first-keystroke="shift enter" />
   </action>
@@ -32,6 +33,12 @@
   <action id="FileStructurePopup">
     <keyboard-shortcut first-keystroke="ctrl f12" />
     <keyboard-shortcut first-keystroke="alt m" />
+  </action>
+  <action id="FindUsages">
+    <keyboard-shortcut first-keystroke="ctrl alt f7" />
+  </action>
+  <action id="FindUsagesInFile">
+    <keyboard-shortcut first-keystroke="alt f7" />
   </action>
   <action id="Forward">
     <keyboard-shortcut first-keystroke="ctrl alt right" />
@@ -54,5 +61,8 @@
   <action id="IpnbRunCellAction" />
   <action id="IpnbRunCellInplaceAction" />
   <action id="OpenElementInNewWindow" />
+  <action id="ShowUsages">
+    <keyboard-shortcut first-keystroke="ctrl f7" />
+  </action>
   <action id="ViewSource" />
 </keymap>
