@@ -1,0 +1,8 @@
+<keymap version="1" name="Visual Studio copy" parent="Visual Studio">
+  <action id="RunToCursor">
+    <keyboard-shortcut first-keystroke="ctrl f10" />
+  </action>
+  <action id="XDebugger.AttachToLocalProcess">
+    <keyboard-shortcut first-keystroke="ctrl f8" />
+  </action>
+</keymap>
