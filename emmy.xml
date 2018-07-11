@@ -1,0 +1,6 @@
+<application>
+  <component name="LuaCheckSettings">
+    <option name="luaCheck" value="d:\Users\ChenJia\Downloads\Programs\Programing\luacheck-0.22.1\" />
+    <option name="luaCheckArgs" value="" />
+  </component>
+</application>
