@@ -1,0 +1,42 @@
+<templateSet group="Lua">
+  <template name="closure" value="function($PARAMS$) $END$ end" description="function() end" toReformat="true" toShortenFQNames="true">
+    <variable name="PARAMS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="fcc" value="function c:$FN$($PARAMS$)&#10;$END$&#10;end" description="local function functionName() end" toReformat="true" toShortenFQNames="true">
+    <variable name="FN" expression="SuggestFirstLuaVarName()" defaultValue="&quot;funcName&quot;" alwaysStopAt="true" />
+    <variable name="PARAMS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="fccs" value="function c.$FN$($PARAMS$)&#10;$END$&#10;end" description="local function functionName() end" toReformat="true" toShortenFQNames="true">
+    <variable name="FN" expression="completeSmart()" defaultValue="&quot;funcName&quot;" alwaysStopAt="true" />
+    <variable name="PARAMS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="var" value="local $name$ = $value$" description="create local var" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="completeSmart()" defaultValue="v" alwaysStopAt="true" />
+    <variable name="value" expression="completeSmart()" defaultValue="{}" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_FUNCTION" value="true" />
+    </context>
+  </template>
+  <template name="cls" value="local c = {}&#10;$end$&#10;return c" description="local function functionName() end" toReformat="true" toShortenFQNames="true">
+    <variable name="end" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="rql" value="local $name$ = require('$fpath$')" toReformat="true" toShortenFQNames="true">
+    <variable name="name" expression="SuggestFirstLuaVarName()" defaultValue="c" alwaysStopAt="true" />
+    <variable name="fpath" expression="fileName()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_CODE" value="true" />
+      <option name="LUA_FUNCTION" value="false" />
+      <option name="LUA_IF" value="false" />
+    </context>
+  </template>
+</templateSet>
