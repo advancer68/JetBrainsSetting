@@ -24,7 +24,8 @@
       <option name="LUA_FUNCTION" value="true" />
     </context>
   </template>
-  <template name="cls" value="local c = {}&#10;$end$&#10;return c" description="local function functionName() end" toReformat="true" toShortenFQNames="true">
+  <template name="cls" value="require &quot;Common/define&quot;&#10;require('3rd.oo.class')&#10;&#10;---@class $clsname$&#10;local c = Class()&#10;$end$&#10;return c" description="local function functionName() end" toReformat="true" toShortenFQNames="true">
+    <variable name="clsname" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
     <variable name="end" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="LUA_CODE" value="true" />
