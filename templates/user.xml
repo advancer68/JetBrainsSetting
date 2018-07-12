@@ -1,0 +1,19 @@
+<templateSet group="user">
+  <template name="iftp" value="if type($arg1$) == '$typy$' then&#10;&#9;&#9;event = tostring(event)&#10;&#9;end" description="if type equal one then" toReformat="true" toShortenFQNames="true">
+    <variable name="arg1" expression="SuggestFirstLuaVarName()" defaultValue="arg1" alwaysStopAt="true" />
+    <variable name="typy" expression="classNameComplete()" defaultValue="table" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_FUNCTION" value="true" />
+    </context>
+  </template>
+  <template name="anf" value="---@field $pub$ $nam$ $tp$" description="annotetion" toReformat="true" toShortenFQNames="true">
+    <variable name="pub" expression="user()" defaultValue="public" alwaysStopAt="true" />
+    <variable name="nam" expression="SuggestFirstLuaVarName()" defaultValue="name" alwaysStopAt="true" />
+    <variable name="tp" expression="classNameComplete()" defaultValue="table" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_CODE" value="true" />
+      <option name="LUA_FUNCTION" value="false" />
+      <option name="LUA_IF" value="false" />
+    </context>
+  </template>
+</templateSet>
