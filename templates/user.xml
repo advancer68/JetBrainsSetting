@@ -16,4 +16,12 @@
       <option name="LUA_IF" value="false" />
     </context>
   </template>
+  <template name="anc" value="---@class $tp$" description="annotetion" toReformat="true" toShortenFQNames="true">
+    <variable name="tp" expression="classNameComplete()" defaultValue="table" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_CODE" value="true" />
+      <option name="LUA_FUNCTION" value="false" />
+      <option name="LUA_IF" value="false" />
+    </context>
+  </template>
 </templateSet>
