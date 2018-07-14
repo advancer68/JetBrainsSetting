@@ -3,4 +3,14 @@
     <option name="luaCheck" value="d:\Users\ChenJia\Downloads\Programs\Programing\luacheck-0.22.1\" />
     <option name="luaCheckArgs" value="" />
   </component>
+  <component name="LuaSettings">
+    <option name="constructorNames">
+      <array>
+        <option value="New" />
+        <option value="new" />
+        <option value="get" />
+      </array>
+    </option>
+    <option name="constructorNamesString" value="New;new;get" />
+  </component>
 </application>
