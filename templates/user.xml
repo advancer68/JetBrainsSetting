@@ -24,4 +24,10 @@
       <option name="LUA_IF" value="false" />
     </context>
   </template>
+  <template name="ifnl" value="if $va$ == nil then&#10;&#9;&#9;loge('account is null')&#10;&#9;&#9;return&#10;end" description="if null log and return" toReformat="true" toShortenFQNames="true">
+    <variable name="va" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_FUNCTION" value="true" />
+    </context>
+  </template>
 </templateSet>
