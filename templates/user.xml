@@ -30,4 +30,12 @@
       <option name="LUA_FUNCTION" value="true" />
     </context>
   </template>
+  <template name="asn" value="assert($va$,'[$fl$ $fc$] &lt;$va$&gt; is null')" description="assert is null" toReformat="true" toShortenFQNames="true">
+    <variable name="va" expression="SuggestFirstLuaVarName()" defaultValue="va" alwaysStopAt="true" />
+    <variable name="fl" expression="fileName()" defaultValue="" alwaysStopAt="false" />
+    <variable name="fc" expression="LuaCurrentFunctionName()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="LUA_FUNCTION" value="true" />
+    </context>
+  </template>
 </templateSet>
