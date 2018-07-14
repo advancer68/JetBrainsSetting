@@ -38,4 +38,10 @@
       <option name="LUA_FUNCTION" value="true" />
     </context>
   </template>
+  <template name="mid" value="local req = mid.newPb(mid.$pbmid$)--&#10;$END$&#10;self:SendPblua(req)" description="create and send pblua" toReformat="true" toShortenFQNames="true">
+    <variable name="pbmid" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_FUNCTION" value="true" />
+    </context>
+  </template>
 </templateSet>
