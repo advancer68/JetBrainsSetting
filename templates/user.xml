@@ -44,7 +44,28 @@
       <option name="LUA_FUNCTION" value="true" />
     </context>
   </template>
-  <template name="res" value="---@param msg $msg$&#10;function c:On$msg$(msg)&#10;    {mid.$msg$Mid,self.On$msg$Mid}&#10;&#9;$END$&#10;end" description="req pb message" toReformat="true" toShortenFQNames="true">
+  <template name="resp" value="---@param msg $msg$&#10;function c:On$msg$(msg)&#10;    --self:AddNetEventMsgListener(mid.$msg$Mid,self.On$msg$)&#10;    { mid.$msg$Mid, self.On$msg$},&#10;&#9;$END$&#10;end" description="resp pb message" toReformat="true" toShortenFQNames="true">
+    <variable name="msg" expression="classNameComplete()" defaultValue="Res" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_CODE" value="true" />
+      <option name="LUA_FUNCTION" value="false" />
+      <option name="LUA_IF" value="false" />
+    </context>
+  </template>
+  <template name="sfd" value="self.$na$ = self:FindTransf('$na$')&#10;$END$" description="self find and set" toReformat="true" toShortenFQNames="true">
+    <variable name="na" expression="SuggestFirstLuaVarName()" defaultValue="name" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_FUNCTION" value="true" />
+    </context>
+  </template>
+  <template name="sfdd" value="self.$na$ = self:FindTransf('$ps$')&#10;$END$" description="self find a path and set" toReformat="true" toShortenFQNames="true">
+    <variable name="na" expression="SuggestFirstLuaVarName()" defaultValue="name" alwaysStopAt="true" />
+    <variable name="ps" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_FUNCTION" value="true" />
+    </context>
+  </template>
+  <template name="clc" value="---@param gobj &#10;function c:OnClick$msg$(gobj)&#10;    { self.panel.$msg$, self.OnClick$msg$ },&#10;&#9;$END$&#10;end" description="resp pb message" toReformat="true" toShortenFQNames="true">
     <variable name="msg" expression="classNameComplete()" defaultValue="Res" alwaysStopAt="true" />
     <context>
       <option name="LUA_CODE" value="true" />
