@@ -30,7 +30,7 @@
       <option name="LUA_FUNCTION" value="true" />
     </context>
   </template>
-  <template name="asn" value="assert($va$,'[$fl$ $fc$] &lt;$va$&gt; is null')" description="assert is null" toReformat="true" toShortenFQNames="true">
+  <template name="asn" value="assert($va$,'[$fl$ $fc$] &lt;$va$&gt; is null')&#10;$END$" description="assert is null" toReformat="true" toShortenFQNames="true">
     <variable name="va" expression="SuggestFirstLuaVarName()" defaultValue="va" alwaysStopAt="true" />
     <variable name="fl" expression="fileName()" defaultValue="" alwaysStopAt="false" />
     <variable name="fc" expression="LuaCurrentFunctionName()" defaultValue="" alwaysStopAt="false" />
@@ -71,6 +71,15 @@
       <option name="LUA_CODE" value="true" />
       <option name="LUA_FUNCTION" value="false" />
       <option name="LUA_IF" value="false" />
+    </context>
+  </template>
+  <template name="ast" value="assert(type($va$) == '$tp$','[$fl$ $fc$] &lt;$va$&gt; type must is $tp$,but is ' .. type($va$))&#10;$END$" description="assert is type" toReformat="true" toShortenFQNames="true">
+    <variable name="va" expression="SuggestFirstLuaVarName()" defaultValue="va" alwaysStopAt="true" />
+    <variable name="tp" expression="classNameComplete()" defaultValue="table" alwaysStopAt="true" />
+    <variable name="fl" expression="fileName()" defaultValue="" alwaysStopAt="false" />
+    <variable name="fc" expression="LuaCurrentFunctionName()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="LUA_FUNCTION" value="true" />
     </context>
   </template>
 </templateSet>
