@@ -82,4 +82,13 @@
       <option name="LUA_FUNCTION" value="true" />
     </context>
   </template>
+  <template name="fcset" value="---@param value $tp$&#10;function c:Set$fna$(value)&#10;&#9;self.$fna$ = value&#10;end" description="define a function set a field" toReformat="true" toShortenFQNames="true">
+    <variable name="fna" expression="SuggestFirstLuaVarName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="tp" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_CODE" value="true" />
+      <option name="LUA_FUNCTION" value="false" />
+      <option name="LUA_IF" value="false" />
+    </context>
+  </template>
 </templateSet>
