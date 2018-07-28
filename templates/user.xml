@@ -7,9 +7,9 @@
     </context>
   </template>
   <template name="anf" value="---@field $pub$ $nam$ $tp$" description="annotetion" toReformat="true" toShortenFQNames="true">
-    <variable name="pub" expression="" defaultValue="public" alwaysStopAt="false" />
     <variable name="nam" expression="SuggestFirstLuaVarName()" defaultValue="name" alwaysStopAt="true" />
     <variable name="tp" expression="classNameComplete()" defaultValue="table" alwaysStopAt="true" />
+    <variable name="pub" expression="" defaultValue="public" alwaysStopAt="true" />
     <context>
       <option name="LUA_CODE" value="true" />
       <option name="LUA_FUNCTION" value="false" />
