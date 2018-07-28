@@ -99,4 +99,11 @@
       <option name="LUA_IF" value="false" />
     </context>
   </template>
+  <template name="csntf" value="elseif info.name == Notif.$va$ then" description="else if info.name == Notif. then" toReformat="true" toShortenFQNames="true">
+    <variable name="va" expression="SuggestFirstLuaVarName()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_FUNCTION" value="true" />
+      <option name="LUA_IF" value="true" />
+    </context>
+  </template>
 </templateSet>
