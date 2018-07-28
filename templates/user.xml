@@ -91,4 +91,12 @@
       <option name="LUA_IF" value="false" />
     </context>
   </template>
+  <template name="dfnt" value="    $va$='$va$',--&#10;    " description="define a notification" toReformat="true" toShortenFQNames="true">
+    <variable name="va" expression="SuggestFirstLuaVarName()" defaultValue="Default" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_CODE" value="true" />
+      <option name="LUA_FUNCTION" value="false" />
+      <option name="LUA_IF" value="false" />
+    </context>
+  </template>
 </templateSet>
