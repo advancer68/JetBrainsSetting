@@ -97,4 +97,10 @@
       <option name="LUA_IF" value="true" />
     </context>
   </template>
+  <template name="sbro" value="self:Brocast(Notif.$va$,msg)" description="self brocast nodification" toReformat="true" toShortenFQNames="true">
+    <variable name="va" expression="SuggestFirstLuaVarName()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_FUNCTION" value="true" />
+    </context>
+  </template>
 </templateSet>
