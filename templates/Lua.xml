@@ -1,73 +1,7 @@
 <templateSet group="Lua">
-  <template name="cf" value="function($PARAMS$) $END$ end" description="function() end" toReformat="true" toShortenFQNames="true">
-    <variable name="PARAMS" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="LUA_CODE" value="true" />
-    </context>
-  </template>
-  <template name="fcc" value="function c:$FN$($PARAMS$)&#10;$END$&#10;end" description="local function functionName() end" toReformat="true" toShortenFQNames="true">
-    <variable name="FN" expression="SuggestFirstLuaVarName()" defaultValue="&quot;funcName&quot;" alwaysStopAt="true" />
-    <variable name="PARAMS" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="LUA_CODE" value="true" />
-    </context>
-  </template>
-  <template name="fccs" value="function c.$FN$($PARAMS$)&#10;$END$&#10;end" description="local function functionName() end" toReformat="true" toShortenFQNames="true">
-    <variable name="FN" expression="completeSmart()" defaultValue="&quot;funcName&quot;" alwaysStopAt="true" />
-    <variable name="PARAMS" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="LUA_CODE" value="true" />
-    </context>
-  </template>
-  <template name="var" value="local $name$ = $value$" description="create local var" toReformat="false" toShortenFQNames="true">
-    <variable name="name" expression="completeSmart()" defaultValue="v" alwaysStopAt="true" />
-    <variable name="value" expression="completeSmart()" defaultValue="{}" alwaysStopAt="true" />
-    <context>
-      <option name="LUA_FUNCTION" value="true" />
-    </context>
-  </template>
-  <template name="cls" value="---@class $clsname$&#10;local c = Class()&#10;$end$&#10;return c" description="local function functionName() end" toReformat="true" toShortenFQNames="true">
-    <variable name="clsname" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
-    <variable name="end" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="LUA_CODE" value="true" />
-    </context>
-  </template>
-  <template name="rql" value="local $name$ = require '$fpath$'" description="" toReformat="true" toShortenFQNames="true">
-    <variable name="name" expression="SuggestFirstLuaVarName()" defaultValue="c" alwaysStopAt="true" />
-    <variable name="fpath" expression="fileName()" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="LUA_CODE" value="true" />
-      <option name="LUA_FUNCTION" value="false" />
-      <option name="LUA_IF" value="false" />
-    </context>
-  </template>
-  <template name="rq" value="require '$fpath$'" description="" toReformat="true" toShortenFQNames="true">
-    <variable name="fpath" expression="fileName()" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="LUA_CODE" value="true" />
-      <option name="LUA_FUNCTION" value="false" />
-      <option name="LUA_IF" value="false" />
-    </context>
-  </template>
   <template name="func" value="function $FN$($PARAMS$)&#10;$END$&#10;end" description="function functionName() end" toReformat="true" toShortenFQNames="true" deactivated="true">
     <variable name="FN" expression="" defaultValue="&quot;funcName&quot;" alwaysStopAt="true" />
     <variable name="PARAMS" expression="" defaultValue="" alwaysStopAt="true" />
     <context />
-  </template>
-  <template name="fcset" value="---@param value $tp$&#10;function c:Set$fna$(value)&#10;&#9;self.$fna$ = value&#10;end" description="define a function set a field" toReformat="true" toShortenFQNames="true">
-    <variable name="fna" expression="SuggestFirstLuaVarName()" defaultValue="" alwaysStopAt="true" />
-    <variable name="tp" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="LUA_CODE" value="true" />
-      <option name="LUA_FUNCTION" value="false" />
-      <option name="LUA_IF" value="false" />
-    </context>
-  </template>
-  <template name="fccl" value="---OnClick$va$&#10;---@param transf UnityEngine.Transform&#10;function c:OnClick$va$(transf)&#10;&#9;--{self.panel.$va$,self.OnClick$va$},&#10;&#9;$END$&#10;end" description="function click button" toReformat="true" toShortenFQNames="true">
-    <variable name="va" expression="SuggestFirstLuaVarName()" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="LUA_FUNCTION" value="true" />
-    </context>
   </template>
 </templateSet>
