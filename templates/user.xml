@@ -6,10 +6,9 @@
       <option name="LUA_FUNCTION" value="true" />
     </context>
   </template>
-  <template name="anf" value="---@field $pub$ $nam$ $tp$" description="annotetion" toReformat="true" toShortenFQNames="true">
-    <variable name="nam" expression="SuggestFirstLuaVarName()" defaultValue="name" alwaysStopAt="true" />
+  <template name="anff" value="---@field $pub$ $tp$ $tp$" description="annotetion a field type name same as field name" toReformat="true" toShortenFQNames="true">
     <variable name="tp" expression="classNameComplete()" defaultValue="table" alwaysStopAt="true" />
-    <variable name="pub" expression="" defaultValue="public" alwaysStopAt="true" />
+    <variable name="pub" expression="" defaultValue="public" alwaysStopAt="false" />
     <context>
       <option name="LUA_CODE" value="true" />
       <option name="LUA_FUNCTION" value="false" />
@@ -82,8 +81,8 @@
       <option name="LUA_FUNCTION" value="true" />
     </context>
   </template>
-  <template name="dfnt" value="    $va$='$va$',--&#10;    " description="define a notification" toReformat="true" toShortenFQNames="true">
-    <variable name="va" expression="SuggestFirstLuaVarName()" defaultValue="Default" alwaysStopAt="true" />
+  <template name="dfnt" value="$va$ = '$va$',--&#10;" description="define a notification" toReformat="false" toShortenFQNames="true">
+    <variable name="va" expression="" defaultValue="Default" alwaysStopAt="true" />
     <context>
       <option name="LUA_CODE" value="true" />
       <option name="LUA_FUNCTION" value="false" />
