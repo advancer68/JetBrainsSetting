@@ -207,4 +207,17 @@
       <option name="LUA_IF" value="false" />
     </context>
   </template>
+  <template name="sfdscl" value="self.$na$ = self:FindScrollViewContent('$na$')" description="self find scroll view" toReformat="true" toShortenFQNames="true">
+    <variable name="na" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_FUNCTION" value="true" />
+    </context>
+  </template>
+  <template name="sfdrl" value="self.$na$ = self:FindTransfRelative(self.$rl$,'$na$')" description="self find relative a transform" toReformat="true" toShortenFQNames="true">
+    <variable name="na" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="rl" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_FUNCTION" value="true" />
+    </context>
+  </template>
 </templateSet>
