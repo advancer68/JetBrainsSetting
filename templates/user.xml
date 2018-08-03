@@ -6,9 +6,8 @@
       <option name="LUA_FUNCTION" value="true" />
     </context>
   </template>
-  <template name="anff" value="---@field $pub$ $tp$ $tp$" description="annotetion a field type name same as field name" toReformat="true" toShortenFQNames="true">
+  <template name="anff" value="---@field public $tp$ $tp$" description="annotetion a field type name same as field name" toReformat="true" toShortenFQNames="true">
     <variable name="tp" expression="classNameComplete()" defaultValue="table" alwaysStopAt="true" />
-    <variable name="pub" expression="" defaultValue="public" alwaysStopAt="false" />
     <context>
       <option name="LUA_CODE" value="true" />
       <option name="LUA_FUNCTION" value="false" />
@@ -180,6 +179,15 @@
     <variable name="msg" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="LUA_CODE" value="true" />
+      <option name="LUA_IF" value="false" />
+    </context>
+  </template>
+  <template name="anf" value="---@field public $va$ $tp$" description="annotetion a field" toReformat="true" toShortenFQNames="true">
+    <variable name="va" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <variable name="tp" expression="classNameComplete()" defaultValue="table" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_CODE" value="true" />
+      <option name="LUA_FUNCTION" value="false" />
       <option name="LUA_IF" value="false" />
     </context>
   </template>
