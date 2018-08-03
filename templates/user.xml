@@ -81,7 +81,7 @@
       <option name="LUA_FUNCTION" value="true" />
     </context>
   </template>
-  <template name="dfnt" value="$va$ = '$va$',--&#10;" description="define a notification" toReformat="false" toShortenFQNames="true">
+  <template name="dfnt" value="$va$ = '',--&#10;" description="define a notification" toReformat="false" toShortenFQNames="true">
     <variable name="va" expression="" defaultValue="Default" alwaysStopAt="true" />
     <context>
       <option name="LUA_CODE" value="true" />
