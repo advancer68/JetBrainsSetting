@@ -44,7 +44,7 @@
       <option name="LUA_FUNCTION" value="true" />
     </context>
   </template>
-  <template name="resp" value="---@param msg $msg$&#10;function c:On$msg$(msg)&#10;    --self:AddNetEventMsgListener(mid.$msg$Mid,self.On$msg$)&#10;    { mid.$msg$Mid, self.On$msg$},&#10;&#9;$END$&#10;end" description="resp pb message" toReformat="true" toShortenFQNames="true">
+  <template name="fcres" value="---@param msg $msg$&#10;function c:On$msg$(msg)&#10;    $END${ mid.$msg$Mid, self.On$msg$},&#10;&#9;&#10;end" description="resp pb message" toReformat="false" toShortenFQNames="true">
     <variable name="msg" expression="classNameComplete()" defaultValue="Res" alwaysStopAt="true" />
     <context>
       <option name="LUA_CODE" value="true" />
@@ -107,13 +107,15 @@
     <variable name="va" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="LUA_FUNCTION" value="true" />
+      <option name="LUA_IF" value="true" />
     </context>
   </template>
   <template name="var" value="local $name$ = $value$" description="create local var" toReformat="false" toShortenFQNames="true">
     <variable name="name" expression="completeSmart()" defaultValue="v" alwaysStopAt="true" />
     <variable name="value" expression="completeSmart()" defaultValue="{}" alwaysStopAt="true" />
     <context>
-      <option name="LUA_FUNCTION" value="true" />
+      <option name="LUA_CODE" value="true" />
+      <option name="LUA_IF" value="false" />
     </context>
   </template>
   <template name="rql" value="local $name$ = require '$fpath$'" description="" toReformat="true" toShortenFQNames="true">
@@ -121,7 +123,6 @@
     <variable name="fpath" expression="fileName()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="LUA_CODE" value="true" />
-      <option name="LUA_FUNCTION" value="false" />
       <option name="LUA_IF" value="false" />
     </context>
   </template>
@@ -172,7 +173,15 @@
   <template name="fccl" value="---OnClick$va$&#10;---@param transf UnityEngine.Transform&#10;function c:OnClick$va$(transf)&#10;&#9;--{self.panel.$va$,self.OnClick$va$},&#10;&#9;$END$&#10;end" description="function click button" toReformat="true" toShortenFQNames="true">
     <variable name="va" expression="SuggestFirstLuaVarName()" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="LUA_FUNCTION" value="true" />
+      <option name="LUA_CODE" value="true" />
+      <option name="LUA_IF" value="false" />
+    </context>
+  </template>
+  <template name="fcreq" value="---$msg$&#10;function c:Req$msg$()&#10;&#9;---@type $msg$&#10;&#9;local msg = mid.newPb(mid.$msg$Mid)--&#10;&#9;&#10;&#9;self:SendPblua(msg)&#10;end" description="define function req pb msg" toReformat="false" toShortenFQNames="true">
+    <variable name="msg" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_CODE" value="true" />
+      <option name="LUA_IF" value="false" />
     </context>
   </template>
 </templateSet>
