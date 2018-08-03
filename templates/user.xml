@@ -191,4 +191,20 @@
       <option name="LUA_IF" value="false" />
     </context>
   </template>
+  <template name="dfuipl" value="$pl$Panel = { abname = &quot;ui/panel&quot;, assetname = &quot;$pl$Panel&quot;, view = &quot;$pl$Panel&quot;, media = &quot;$pl$Mediator&quot; },&#10;" description="define a uipanel config" toReformat="true" toShortenFQNames="true">
+    <variable name="pl" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_CODE" value="true" />
+      <option name="LUA_FUNCTION" value="false" />
+      <option name="LUA_IF" value="false" />
+    </context>
+  </template>
+  <template name="dfuit" value="$pl$Item = { abname = &quot;ui/item&quot;, assetname = &quot;$pl$Item&quot;, view = &quot;$pl$Item&quot; },&#10;" description="define a ui item" toReformat="true" toShortenFQNames="true">
+    <variable name="pl" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_CODE" value="true" />
+      <option name="LUA_FUNCTION" value="false" />
+      <option name="LUA_IF" value="false" />
+    </context>
+  </template>
 </templateSet>
