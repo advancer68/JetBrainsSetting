@@ -227,4 +227,10 @@
       <option name="LUA_IF" value="false" />
     </context>
   </template>
+  <template name="vav" value="---@type $tp$&#10;local view = transf:GetLuaView()" description="local view = transf:GetLuaView()" toReformat="true" toShortenFQNames="true">
+    <variable name="tp" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_FUNCTION" value="true" />
+    </context>
+  </template>
 </templateSet>
