@@ -220,4 +220,11 @@
       <option name="LUA_FUNCTION" value="true" />
     </context>
   </template>
+  <template name="fcreqs" value="---@param msg $msg$ResMsg&#10;function c:On$msg$ResMsg(msg)&#10;    $END${ mid.$msg$ResMsgMid, self.On$msg$ResMsg},&#10;&#9;&#10;end&#10;---$msg$ReqMsg&#10;function c:Req$msg$ReqMsg()&#10;&#9;---@type $msg$ReqMsg&#10;&#9;local msg = mid.newPb(mid.$msg$ReqMsgMid)--&#10;&#9;&#10;&#9;self:SendPblua(msg)&#10;end" description="define function req pb msg and res" toReformat="true" toShortenFQNames="true">
+    <variable name="msg" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_CODE" value="true" />
+      <option name="LUA_IF" value="false" />
+    </context>
+  </template>
 </templateSet>
