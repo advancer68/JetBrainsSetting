@@ -10,8 +10,6 @@
     <variable name="tp" expression="classNameComplete()" defaultValue="table" alwaysStopAt="true" />
     <context>
       <option name="LUA_CODE" value="true" />
-      <option name="LUA_FUNCTION" value="false" />
-      <option name="LUA_IF" value="false" />
     </context>
   </template>
   <template name="anc" value="---@class $tp$" description="annotetion" toReformat="true" toShortenFQNames="true">
@@ -187,8 +185,6 @@
     <variable name="tp" expression="classNameComplete()" defaultValue="table" alwaysStopAt="true" />
     <context>
       <option name="LUA_CODE" value="true" />
-      <option name="LUA_FUNCTION" value="false" />
-      <option name="LUA_IF" value="false" />
     </context>
   </template>
   <template name="dfuipl" value="$pl$Panel = { abname = &quot;ui/panel&quot;, assetname = &quot;$pl$Panel&quot;, view = &quot;$pl$Panel&quot;, media = &quot;$pl$Mediator&quot; },&#10;" description="define a uipanel config" toReformat="true" toShortenFQNames="true">
@@ -244,8 +240,6 @@
     <variable name="tp" expression="classNameComplete()" defaultValue="table" alwaysStopAt="true" />
     <context>
       <option name="LUA_CODE" value="true" />
-      <option name="LUA_FUNCTION" value="false" />
-      <option name="LUA_IF" value="false" />
     </context>
   </template>
   <template name="ants" value="---@type $tp$[]" description="annotetion a type array" toReformat="true" toShortenFQNames="true">
