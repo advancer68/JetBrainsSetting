@@ -250,4 +250,12 @@
       <option name="LUA_IF" value="false" />
     </context>
   </template>
+  <template name="fcget" value="function c:Get$na$()&#10;&#9;return self.$na$&#10;end" description="function get field" toReformat="true" toShortenFQNames="true">
+    <variable name="na" expression="lowercaseAndDash(String)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_CODE" value="true" />
+      <option name="LUA_FUNCTION" value="false" />
+      <option name="LUA_IF" value="false" />
+    </context>
+  </template>
 </templateSet>
