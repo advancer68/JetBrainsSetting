@@ -21,4 +21,8 @@
     <variable name="EXPR" expression="SuggestFirstLuaVarName()" defaultValue="&quot;10&quot;" alwaysStopAt="true" />
     <context />
   </template>
+  <template name="if" value="if $VAR$ then&#10;$END$&#10;end" description="if expr then end" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="SuggestFirstLuaVarName()" defaultValue="&quot;true&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
 </templateSet>
