@@ -1,5 +1,5 @@
 <templateSet group="user">
-  <template name="iftp" value="if type($arg1$) == '$typy$' then&#10;&#9;&#9;event = tostring(event)&#10;&#9;end" description="if type equal one then" toReformat="true" toShortenFQNames="true">
+  <template name="iftp" value="if type($arg1$) == '$typy$' then&#10;&#9;$END$&#10;end" description="if type equal one then" toReformat="false" toShortenFQNames="true">
     <variable name="arg1" expression="SuggestFirstLuaVarName()" defaultValue="arg1" alwaysStopAt="true" />
     <variable name="typy" expression="classNameComplete()" defaultValue="table" alwaysStopAt="true" />
     <context>
