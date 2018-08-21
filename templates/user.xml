@@ -40,7 +40,7 @@
       <option name="LUA_FUNCTION" value="true" />
     </context>
   </template>
-  <template name="fcres" value="---@param msg $msg$&#10;function c:On$msg$(msg)&#10;    $END${ mid.$msg$Mid, self.On$msg$},&#10;&#9;&#10;end" description="resp pb message" toReformat="false" toShortenFQNames="true">
+  <template name="fcres" value="---@param msg $msg$ResMsg&#10;function c:On$msg$ResMsg(msg)&#10;    $END${ mid.$msg$ResMsgMid, self.On$msg$ResMsg},&#10;&#9;&#10;end" description="resp pb message" toReformat="false" toShortenFQNames="true">
     <variable name="msg" expression="classNameComplete()" defaultValue="Res" alwaysStopAt="true" />
     <context>
       <option name="LUA_CODE" value="true" />
@@ -233,7 +233,7 @@
     <variable name="tp" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="em" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="LUA_FUNCTION" value="true" />
+      <option name="LUA_CODE" value="true" />
     </context>
   </template>
   <template name="ant" value="---@type $tp$" description="annotetion a type" toReformat="true" toShortenFQNames="true">
