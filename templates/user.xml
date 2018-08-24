@@ -298,4 +298,17 @@
       <option name="LUA_FUNCTION" value="true" />
     </context>
   </template>
+  <template name="ifndf" value="if $va$ == nil then $va$ = $END$ end" description="if null set default" toReformat="true" toShortenFQNames="true">
+    <variable name="va" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_FUNCTION" value="true" />
+      <option name="LUA_IF" value="true" />
+    </context>
+  </template>
+  <template name="tfd" value="local $va$ = transf:Find('$va$')&#10;$END$" description="transf find va" toReformat="false" toShortenFQNames="true">
+    <variable name="va" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_FUNCTION" value="true" />
+    </context>
+  </template>
 </templateSet>
