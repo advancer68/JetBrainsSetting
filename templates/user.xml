@@ -298,7 +298,7 @@
       <option name="LUA_FUNCTION" value="true" />
     </context>
   </template>
-  <template name="ifndf" value="if $va$ == nil then $va$ = $END$ end" description="if null set default" toReformat="true" toShortenFQNames="true">
+  <template name="ifndf" value="if $va$ == nil then $va$ = $END$ end" description="if null set default" toReformat="false" toShortenFQNames="true">
     <variable name="va" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="LUA_FUNCTION" value="true" />
