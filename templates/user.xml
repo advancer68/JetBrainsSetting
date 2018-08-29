@@ -311,4 +311,10 @@
       <option name="LUA_FUNCTION" value="true" />
     </context>
   </template>
+  <template name="v--" value="$va$ = $va$ - 1" description="var --" toReformat="false" toShortenFQNames="true">
+    <variable name="va" expression="SuggestFirstLuaVarName()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_FUNCTION" value="true" />
+    </context>
+  </template>
 </templateSet>
