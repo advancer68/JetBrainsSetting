@@ -317,4 +317,14 @@
       <option name="LUA_FUNCTION" value="true" />
     </context>
   </template>
+  <template name="d3" value="... " description="define args" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="LUA_FUNCTION" value="true" />
+    </context>
+  </template>
+  <template name="d2" value=" .. " description="string +" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="LUA_FUNCTION" value="true" />
+    </context>
+  </template>
 </templateSet>
