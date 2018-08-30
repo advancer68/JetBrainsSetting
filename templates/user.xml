@@ -327,4 +327,12 @@
       <option name="LUA_FUNCTION" value="true" />
     </context>
   </template>
+  <template name="fcclc" value="---OnClick_$va$&#10;---@param transf UnityEngine.Transform&#10;function c:OnClick_$va$(transf)&#10;&#9;$END$self.$va$:AddBtnClickOO1(self.OnClick_$va$,self)&#10;&#9;&#10;end" description="function click button normal" toReformat="false" toShortenFQNames="true">
+    <variable name="va" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_CODE" value="true" />
+      <option name="LUA_FUNCTION" value="false" />
+      <option name="LUA_IF" value="false" />
+    </context>
+  </template>
 </templateSet>
