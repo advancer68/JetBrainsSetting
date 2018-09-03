@@ -335,4 +335,11 @@
       <option name="LUA_IF" value="false" />
     </context>
   </template>
+  <template name="cfitret" value="function(it$END$)  &#10;&#9;&#9;return it.$va$ == $va1$&#10;&#9;end" description="close function item return bool" toReformat="false" toShortenFQNames="true">
+    <variable name="va" expression="SuggestFirstLuaVarName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="va1" expression="SuggestLuaParameters()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_FUNCTION" value="true" />
+    </context>
+  </template>
 </templateSet>
