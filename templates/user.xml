@@ -342,4 +342,30 @@
       <option name="LUA_FUNCTION" value="true" />
     </context>
   </template>
+  <template name="tsetr1" value="    ---@param it1 $tp$&#10;&#9;---@param it2 $tp$&#10;&#9;self.$vv$:setRange_f(msg.trains,function(it1,it2)&#10;&#9;&#9;return it1.$va$ == it2.$va$&#10;&#9;end)" description="table set range" toReformat="true" toShortenFQNames="true">
+    <variable name="tp" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="vv" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="va" expression="SuggestFirstLuaVarName()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_FUNCTION" value="true" />
+    </context>
+  </template>
+  <template name="tsetr2" value="    ---@param it1 $tp1$&#10;&#9;---@param it2 $tp2$&#10;&#9;self.$vv$:setRange_f(msg.trains,function(it1,it2)&#10;&#9;&#9;return it1.$va1$ == it2.$va2$&#10;&#9;end)" description="table set range" toReformat="true" toShortenFQNames="true">
+    <variable name="tp1" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="tp2" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="vv" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="va1" expression="SuggestFirstLuaVarName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="va2" expression="SuggestFirstLuaVarName()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_FUNCTION" value="true" />
+    </context>
+  </template>
+  <template name="tsetf" value="---@param it $tp$&#10;self.trainQueueInfos:set_f(msg.quene,function(it)&#10;&#9;return it$va1$ == msg$va2$&#10;end)" description="table set f" toReformat="true" toShortenFQNames="true">
+    <variable name="tp" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="va1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="va2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_FUNCTION" value="true" />
+    </context>
+  </template>
 </templateSet>
