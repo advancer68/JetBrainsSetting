@@ -139,7 +139,7 @@
       <option name="LUA_IF" value="false" />
     </context>
   </template>
-  <template name="fccs" value="function c.$FN$($PARAMS$)&#10;$END$&#10;end" description="local function functionName() end" toReformat="true" toShortenFQNames="true">
+  <template name="fccs" value="function c.$FN$($PARAMS$)&#10;$END$&#10;end" description="function c.functionName() end" toReformat="true" toShortenFQNames="true">
     <variable name="FN" expression="completeSmart()" defaultValue="&quot;funcName&quot;" alwaysStopAt="true" />
     <variable name="PARAMS" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -159,7 +159,7 @@
       <option name="LUA_CODE" value="true" />
     </context>
   </template>
-  <template name="fcc" value="function c:$FN$($PARAMS$)&#10;$END$&#10;end" description="local function functionName() end" toReformat="true" toShortenFQNames="true">
+  <template name="fcc" value="function c:$FN$($PARAMS$)&#10;$END$&#10;end" description="function c:functionName() end" toReformat="true" toShortenFQNames="true">
     <variable name="FN" expression="SuggestFirstLuaVarName()" defaultValue="&quot;funcName&quot;" alwaysStopAt="true" />
     <variable name="PARAMS" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -327,7 +327,7 @@
       <option name="LUA_FUNCTION" value="true" />
     </context>
   </template>
-  <template name="fcclc" value="---OnClick_$va$&#10;---@param transf UnityEngine.Transform&#10;function c:OnClick_$va$(transf)&#10;&#9;$END$self.$va$:AddBtnClickOO1(self.OnClick_$va$,self)&#10;&#9;&#10;end" description="function click button normal" toReformat="false" toShortenFQNames="true">
+  <template name="fcclcs" value="---OnClick_$va$&#10;---@param transf UnityEngine.Transform&#10;function c:OnClick_$va$(transf)&#10;&#9;$END$self.$va$:AddBtnClickOO1(self.OnClick_$va$,self)&#10;&#9;&#10;end" description="function click button self.btn:AddBtnClickOO1" toReformat="false" toShortenFQNames="true">
     <variable name="va" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="LUA_CODE" value="true" />
@@ -366,6 +366,14 @@
     <variable name="va2" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="LUA_FUNCTION" value="true" />
+    </context>
+  </template>
+  <template name="fcclci" value="---OnClick_$va$&#10;---@param transf UnityEngine.Transform&#10;function c:OnClick_$va$(transf)&#10;&#9;$END$item.$va$:AddBtnClickOO1(self.OnClick_$va$,self)&#10;&#9;&#10;end" description="function click button item.btn:AddBtnClickOO1" toReformat="false" toShortenFQNames="true">
+    <variable name="va" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_CODE" value="true" />
+      <option name="LUA_FUNCTION" value="false" />
+      <option name="LUA_IF" value="false" />
     </context>
   </template>
 </templateSet>
