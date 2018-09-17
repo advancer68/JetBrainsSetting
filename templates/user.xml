@@ -380,4 +380,11 @@
       <option name="LUA_IF" value="false" />
     </context>
   </template>
+  <template name="sfmt" value="local str = String.Format(&quot;$va$&quot;,$ag$)&#10;$END$" description="local str = string.format" toReformat="false" toShortenFQNames="true">
+    <variable name="va" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ag" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_FUNCTION" value="true" />
+    </context>
+  </template>
 </templateSet>
