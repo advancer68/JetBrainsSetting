@@ -305,7 +305,7 @@
       <option name="LUA_IF" value="true" />
     </context>
   </template>
-  <template name="tfd1" value="---@param item $tp$&#10;local $va0$ self.$va$:findi_v(function(item)&#10;&#9;return item$va1$ == $va2$&#10;end)" description="table find a target" toReformat="false" toShortenFQNames="true">
+  <template name="tfd1" value="---@param item $tp$&#10;local $va0$ = self.$va$:findi_v(function(item)&#10;&#9;return item$va1$ == $va2$&#10;end)" description="table find a target" toReformat="false" toShortenFQNames="true">
     <variable name="tp" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="va0" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="va" expression="" defaultValue="" alwaysStopAt="true" />
@@ -346,7 +346,7 @@
       <option name="LUA_FUNCTION" value="true" />
     </context>
   </template>
-  <template name="tsetr1" value="    ---@param it1 $tp$&#10;&#9;---@param it2 $tp$&#10;&#9;self.$vv$:setRange_f(msg.trains,function(it1,it2)&#10;&#9;&#9;return it1.$va$ == it2.$va$&#10;&#9;end)" description="table set range" toReformat="true" toShortenFQNames="true">
+  <template name="tsetr1" value="    ---@param it1 $tp$&#10;&#9;---@param it2 $tp$&#10;&#9;self.$vv$:setRange_f(msg.trains,function(it1,it2)&#10;&#9;&#9;return it1$va$ == it2$va$&#10;&#9;end)" description="table set range" toReformat="true" toShortenFQNames="true">
     <variable name="tp" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
     <variable name="vv" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="va" expression="SuggestFirstLuaVarName()" defaultValue="" alwaysStopAt="true" />
