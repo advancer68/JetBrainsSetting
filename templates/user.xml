@@ -305,8 +305,12 @@
       <option name="LUA_IF" value="true" />
     </context>
   </template>
-  <template name="tfd" value="local $va$ = transf:Find('$va$')&#10;$END$" description="transf find va" toReformat="false" toShortenFQNames="true">
+  <template name="tfd1" value="---@param item $tp$&#10;local $va0$ self.$va$:findi_v(function(item)&#10;&#9;return item$va1$ == $va2$&#10;end)" description="table find a target" toReformat="false" toShortenFQNames="true">
+    <variable name="tp" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="va0" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="va" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="va1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="va2" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="LUA_FUNCTION" value="true" />
     </context>
