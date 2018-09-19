@@ -20,7 +20,7 @@
       <option name="LUA_IF" value="false" />
     </context>
   </template>
-  <template name="ifnret" value="if $va$ == nil then return end" description="if null log and return" toReformat="false" toShortenFQNames="true">
+  <template name="ifnret" value="if $va$ == nil then return end&#10;$END$" description="if null log and return" toReformat="false" toShortenFQNames="true">
     <variable name="va" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="LUA_FUNCTION" value="true" />
@@ -291,7 +291,7 @@
       <option name="LUA_FUNCTION" value="true" />
     </context>
   </template>
-  <template name="ifnretv" value="if $va$ == nil then return $vret$ end" description="if null log and return value" toReformat="false" toShortenFQNames="true">
+  <template name="ifnretv" value="if $va$ == nil then return $vret$ end&#10;$END$" description="if null log and return value" toReformat="false" toShortenFQNames="true">
     <variable name="va" expression="SuggestFirstLuaVarName()" defaultValue="" alwaysStopAt="true" />
     <variable name="vret" expression="SuggestFirstLuaVarName()" defaultValue="" alwaysStopAt="true" />
     <context>
