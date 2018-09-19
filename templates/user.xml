@@ -331,7 +331,7 @@
       <option name="LUA_FUNCTION" value="true" />
     </context>
   </template>
-  <template name="fcclcs" value="---OnClick_$va$&#10;---@param transf UnityEngine.Transform&#10;function c:OnClick_$va$(transf)&#10;&#9;$END$self.$va$:AddBtnClickOO1(self.OnClick_$va$,self)&#10;&#9;&#10;end" description="function click button self.btn:AddBtnClickOO1" toReformat="false" toShortenFQNames="true">
+  <template name="fcclcs" value="---OnClick_$va$&#10;---@param transf UnityEngine.Transform&#10;function c:OnClick_$va$(transf)&#10;&#9;$END$self.$va$:SetButtonClickEvent(self.OnClick_$va$,self)&#10;&#9;&#10;end" description="function click button self.btn:SetButtonClickEvent" toReformat="false" toShortenFQNames="true">
     <variable name="va" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="LUA_CODE" value="true" />
@@ -372,7 +372,7 @@
       <option name="LUA_FUNCTION" value="true" />
     </context>
   </template>
-  <template name="fcclci" value="---OnClick_$va$&#10;---@param transf UnityEngine.Transform&#10;function c:OnClick_$va$(transf)&#10;&#9;$END$item.$va$:AddBtnClickOO1(self.OnClick_$va$,self)&#10;&#9;&#10;end" description="function click button item.btn:AddBtnClickOO1" toReformat="false" toShortenFQNames="true">
+  <template name="fcclci" value="---OnClick_$va$&#10;---@param transf UnityEngine.Transform&#10;function c:OnClick_$va$(transf)&#10;&#9;$END$item.$va$:SetButtonClickEvent(self.OnClick_$va$,self)&#10;&#9;&#10;end" description="function click button item.btn:SetButtonClickEvent" toReformat="false" toShortenFQNames="true">
     <variable name="va" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="LUA_CODE" value="true" />
@@ -383,6 +383,11 @@
   <template name="sfmt" value="local str = String.Format(&quot;$va$&quot;,$ag$)&#10;$END$" description="local str = string.format" toReformat="false" toShortenFQNames="true">
     <variable name="va" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="ag" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_FUNCTION" value="true" />
+    </context>
+  </template>
+  <template name="cf2" value="function(it1,it2)&#10;&#10;end" description="close function fun(it1,it2)" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="LUA_FUNCTION" value="true" />
     </context>
