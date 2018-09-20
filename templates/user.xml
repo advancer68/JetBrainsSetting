@@ -392,4 +392,14 @@
       <option name="LUA_FUNCTION" value="true" />
     </context>
   </template>
+  <template name="trmv" value="---@param item $tp$&#10;local $va0$ = self.$va$:remove_f(function(item)&#10;&#9;return item$va1$ == $va2$&#10;end)" description="table remove a target" toReformat="false" toShortenFQNames="true">
+    <variable name="tp" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="va0" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="va" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="va1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="va2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_FUNCTION" value="true" />
+    </context>
+  </template>
 </templateSet>
