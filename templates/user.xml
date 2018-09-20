@@ -271,7 +271,7 @@
       <option name="LUA_FUNCTION" value="true" />
     </context>
   </template>
-  <template name="fctoga" value="---OnClick&#10;---@param transf UnityEngine.Transform&#10;---@param value boolean&#10;function c:OnClick_$va$(transf,value)&#9;&#10;&#9;$END$self.panel.$va$:AddChildAllToggleValueChangeEvent(self.OnClick_$va$,self)&#10;&#9;if value then&#10;&#9;&#9;local index = transf:GetSiblingIndex()&#10;&#9;&#9;local proxy = AppLuaFacade.ProxyManager.BlackboardProxy&#10;&#9;&#9;proxy:SetSelectEquipIndex(index)&#10;&#9;end&#10;end" description="function define child toggle all" toReformat="true" toShortenFQNames="true">
+  <template name="fctoga" value="---OnClick&#10;---@param transf UnityEngine.Transform&#10;---@param value boolean&#10;function c:OnClick_$va$(transf,value)&#9;&#10;&#9;$END$self.panel.$va$:AddChildAllToggleValueChangeEvent(self.OnClick_$va$,self)&#10;&#9;if value then&#10;&#9;&#9;local index = transf:GetSiblingIndexLua()&#10;&#9;&#9;local proxy = AppLuaFacade.ProxyManager.BlackboardProxy&#10;&#9;&#9;proxy:SetSelectEquipIndex(index)&#10;&#9;end&#10;end" description="function define child toggle all" toReformat="true" toShortenFQNames="true">
     <variable name="va" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="LUA_CODE" value="true" />
