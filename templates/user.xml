@@ -416,4 +416,10 @@
       <option name="LUA_FUNCTION" value="true" />
     </context>
   </template>
+  <template name="tlen" value="local len = table.len($va$)&#10;$END$" description="local len = table.len(va)" toReformat="true" toShortenFQNames="true">
+    <variable name="va" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_FUNCTION" value="true" />
+    </context>
+  </template>
 </templateSet>
