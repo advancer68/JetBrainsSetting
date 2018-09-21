@@ -48,15 +48,12 @@
       <option name="LUA_IF" value="false" />
     </context>
   </template>
-  <template name="sfd" value="self.$na$ = self:FindTransf('$na$')&#10;$END$" description="self find and set" toReformat="true" toShortenFQNames="true">
-    <variable name="na" expression="SuggestFirstLuaVarName()" defaultValue="name" alwaysStopAt="true" />
-    <context>
-      <option name="LUA_FUNCTION" value="true" />
-    </context>
-  </template>
-  <template name="sfdd" value="self.$na$ = self:FindTransf('$ps$')&#10;$END$" description="self find a path and set" toReformat="true" toShortenFQNames="true">
-    <variable name="na" expression="SuggestFirstLuaVarName()" defaultValue="name" alwaysStopAt="true" />
-    <variable name="ps" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="sfd" value="---@param item $tp$&#10;local $va0$ = self.$va$:findi_v(function(item)&#10;&#9;return item$va1$ == $va2$&#10;end)&#10;$END$" description="self find and set" toReformat="true" toShortenFQNames="true">
+    <variable name="tp" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="va0" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="va" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="va1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="va2" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="LUA_FUNCTION" value="true" />
     </context>
@@ -203,19 +200,6 @@
       <option name="LUA_IF" value="false" />
     </context>
   </template>
-  <template name="sfdscl" value="self.$na$ = self:FindScrollViewContent('$na$')" description="self find scroll view" toReformat="true" toShortenFQNames="true">
-    <variable name="na" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="LUA_FUNCTION" value="true" />
-    </context>
-  </template>
-  <template name="sfdrl" value="self.$na$ = self:FindTransfRelative(self.$rl$,'$na$')" description="self find relative a transform" toReformat="true" toShortenFQNames="true">
-    <variable name="na" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="rl" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="LUA_FUNCTION" value="true" />
-    </context>
-  </template>
   <template name="fcreqs" value="---$msg$ReqMsg&#10;function c:Req$msg$ReqMsg()&#10;&#9;---@type $msg$ReqMsg&#10;&#9;local msg = mid.newPb(mid.$msg$ReqMsgMid)--&#10;&#9;&#10;&#9;self:SendPblua(msg)&#10;end&#10;---&#10;---@param msg $msg$ResMsg&#10;function c:On$msg$ResMsg(msg)&#10;    $END${ mid.$msg$ResMsgMid, self.On$msg$ResMsg},&#10;&#9;&#10;end" description="define function req pb msg and res" toReformat="true" toShortenFQNames="true">
     <variable name="msg" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -305,10 +289,9 @@
       <option name="LUA_IF" value="true" />
     </context>
   </template>
-  <template name="tfd1" value="---@param item $tp$&#10;local $va0$ = self.$va$:findi_v(function(item)&#10;&#9;return item$va1$ == $va2$&#10;end)" description="table find a target" toReformat="false" toShortenFQNames="true">
+  <template name="tfdv" value="---@param item $tp$&#10;local $va0$ = table.findi_v(function(item)&#10;&#9;return item$va1$ == $va2$&#10;end)&#10;$END$" description="table ipairs find return value" toReformat="false" toShortenFQNames="true">
     <variable name="tp" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="va0" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="va" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="va1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="va2" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -396,6 +379,25 @@
     <variable name="tp" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="va0" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="va" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="va1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="va2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_FUNCTION" value="true" />
+    </context>
+  </template>
+  <template name="sfd1" value="---@param item $tp$&#10;local $va0$ = self.$va$:findi_v(function(item)&#10;&#9;return item$va1$ == $va2$&#10;end)&#10;$END$" description="table find a target" toReformat="false" toShortenFQNames="true">
+    <variable name="tp" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="va0" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="va" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="va1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="va2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_FUNCTION" value="true" />
+    </context>
+  </template>
+  <template name="tfdi" value="---@param item $tp$&#10;local $va0$ = table.findi_v(function(item)&#10;&#9;return item$va1$ == $va2$&#10;end)&#10;$END$" description="table ipairs find  a value index" toReformat="false" toShortenFQNames="true">
+    <variable name="tp" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="va0" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="va1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="va2" expression="" defaultValue="" alwaysStopAt="true" />
     <context>

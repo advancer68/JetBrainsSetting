@@ -1,7 +1,20 @@
 <keymap version="1" name="Visual Studio copy" parent="Visual Studio">
+  <action id="Console.Execute.Multiline" />
+  <action id="DirDiffMenu.SynchronizeDiff.All" />
+  <action id="EditorSplitLine">
+    <keyboard-shortcut first-keystroke="ctrl alt enter" />
+  </action>
+  <action id="EditorStartNewLineBefore">
+    <keyboard-shortcut first-keystroke="ctrl enter" />
+  </action>
+  <action id="Groovy.Shell.Execute" />
+  <action id="KotlinShellExecute" />
+  <action id="PyExecuteCellAction" />
+  <action id="QuickActionPopup" />
   <action id="RunToCursor">
     <keyboard-shortcut first-keystroke="ctrl f10" />
   </action>
+  <action id="ViewSource" />
   <action id="XDebugger.AttachToLocalProcess">
     <keyboard-shortcut first-keystroke="ctrl f8" />
   </action>
