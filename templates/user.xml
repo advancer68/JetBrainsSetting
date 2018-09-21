@@ -289,9 +289,10 @@
       <option name="LUA_IF" value="true" />
     </context>
   </template>
-  <template name="tfdv" value="---@param item $tp$&#10;local $va0$ = table.findi_v(function(item)&#10;&#9;return item$va1$ == $va2$&#10;end)&#10;$END$" description="table ipairs find return value" toReformat="false" toShortenFQNames="true">
+  <template name="tfdv" value="---@param item $tp$&#10;local $va0$ = table.findi_v($va$,function(item)&#10;&#9;return item$va1$ == $va2$&#10;end)&#10;$END$" description="table ipairs find return value" toReformat="false" toShortenFQNames="true">
     <variable name="tp" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="va0" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="va" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="va1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="va2" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -375,7 +376,7 @@
       <option name="LUA_FUNCTION" value="true" />
     </context>
   </template>
-  <template name="trmv" value="---@param item $tp$&#10;local $va0$ = self.$va$:remove_f(function(item)&#10;&#9;return item$va1$ == $va2$&#10;end)" description="table remove a target" toReformat="false" toShortenFQNames="true">
+  <template name="srmv" value="---@param item $tp$&#10;local $va0$ = self.$va$:remove_f(function(item)&#10;&#9;return item$va1$ == $va2$&#10;end)" description="self remove a target" toReformat="false" toShortenFQNames="true">
     <variable name="tp" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="va0" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="va" expression="" defaultValue="" alwaysStopAt="true" />
@@ -395,9 +396,20 @@
       <option name="LUA_FUNCTION" value="true" />
     </context>
   </template>
-  <template name="tfdi" value="---@param item $tp$&#10;local $va0$ = table.findi_v(function(item)&#10;&#9;return item$va1$ == $va2$&#10;end)&#10;$END$" description="table ipairs find  a value index" toReformat="false" toShortenFQNames="true">
+  <template name="tfdi" value="---@param item $tp$&#10;local $va0$ = table.findi_v($va$,function(item)&#10;&#9;return item$va1$ == $va2$&#10;end)&#10;$END$" description="table ipairs find  a value index" toReformat="false" toShortenFQNames="true">
     <variable name="tp" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="va0" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="va" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="va1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="va2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_FUNCTION" value="true" />
+    </context>
+  </template>
+  <template name="trmv" value="---@param item $tp$&#10;local $va0$ = table:remove_f($va$,function(item)&#10;&#9;return item$va1$ == $va2$&#10;end)" description="table remove a target" toReformat="false" toShortenFQNames="true">
+    <variable name="tp" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="va0" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="va" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="va1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="va2" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
