@@ -443,4 +443,12 @@
       <option name="LUA_FUNCTION" value="true" />
     </context>
   </template>
+  <template name="pbstp" value="---@type $tp$&#10;$tp$ = pblua.BackpackMsg_pb.$tp$" description="AccelerateType = pblua.BackpackMsg_pb.AccelerateType" toReformat="true" toShortenFQNames="true">
+    <variable name="tp" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_CODE" value="true" />
+      <option name="LUA_FUNCTION" value="false" />
+      <option name="LUA_IF" value="false" />
+    </context>
+  </template>
 </templateSet>
