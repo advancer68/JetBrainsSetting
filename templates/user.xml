@@ -422,4 +422,10 @@
       <option name="LUA_FUNCTION" value="true" />
     </context>
   </template>
+  <template name="vam" value="msg.$va$ = $va$&#10;$END$" description="msg.va = va" toReformat="true" toShortenFQNames="true">
+    <variable name="va" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_FUNCTION" value="true" />
+    </context>
+  </template>
 </templateSet>
