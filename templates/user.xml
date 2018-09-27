@@ -428,4 +428,19 @@
       <option name="LUA_FUNCTION" value="true" />
     </context>
   </template>
+  <template name="tct" value="---@param item $tp$&#10;&#9;local has = table.contain_i(self.ItemList,function(item)&#10;&#9;&#9;return item.$va1$ == $va1$&#10;&#9;end)" description="table contain" toReformat="true" toShortenFQNames="true">
+    <variable name="tp" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="va1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_FUNCTION" value="true" />
+    </context>
+  </template>
+  <template name="tct1" value="---@param item $tp$&#10;&#9;local $va$ = table.contain_i(self.ItemList,function(item)&#10;&#9;&#9;return item.$va1$ == $va1$&#10;&#9;end)" description="table contain local variab" toReformat="true" toShortenFQNames="true">
+    <variable name="tp" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="va" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="va1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_FUNCTION" value="true" />
+    </context>
+  </template>
 </templateSet>
