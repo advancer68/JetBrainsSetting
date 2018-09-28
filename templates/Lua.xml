@@ -20,4 +20,8 @@
     <variable name="VAR" expression="SuggestFirstLuaVarName()" defaultValue="&quot;true&quot;" alwaysStopAt="true" />
     <context />
   </template>
+  <template name="elseif" value="elseif $VAR$ then&#10;$END$" description="elseif expr then" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="SuggestFirstLuaVarName()" defaultValue="&quot;true&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
 </templateSet>
