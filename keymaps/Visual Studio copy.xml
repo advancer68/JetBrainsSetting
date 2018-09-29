@@ -7,6 +7,15 @@
   <action id="EditorStartNewLineBefore">
     <keyboard-shortcut first-keystroke="ctrl enter" />
   </action>
+  <action id="FileChooser.NewFolder">
+    <keyboard-shortcut first-keystroke="alt insert" />
+  </action>
+  <action id="Generate">
+    <keyboard-shortcut first-keystroke="alt insert" />
+  </action>
+  <action id="GotoClass">
+    <keyboard-shortcut first-keystroke="ctrl n" />
+  </action>
   <action id="Groovy.Shell.Execute" />
   <action id="KotlinShellExecute" />
   <action id="PyExecuteCellAction" />
