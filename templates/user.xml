@@ -213,7 +213,7 @@
       <option name="LUA_FUNCTION" value="true" />
     </context>
   </template>
-  <template name="fcnotf" value="---@param msg $tp$&#10;function c:On$em$(msg)&#10;&#9;$END${Notif.$em$,self.On$em$},&#10;&#10;end" description="add notif adn register" toReformat="true" toShortenFQNames="true">
+  <template name="fcnotfo" value="---@param msg $tp$&#10;function c:On$em$(msg)&#10;&#9;$END${Notif.$em$,self.On$em$},&#10;&#10;end" description="add notif adn register list" toReformat="true" toShortenFQNames="true">
     <variable name="tp" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="em" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -449,6 +449,13 @@
       <option name="LUA_CODE" value="true" />
       <option name="LUA_FUNCTION" value="false" />
       <option name="LUA_IF" value="false" />
+    </context>
+  </template>
+  <template name="fcnotf" value="---@param msg $tp$&#10;function c:On$em$(msg)&#10;&#9;$END$self:RegisterNotification(Notif.$em$,self.On$em$),&#10;&#10;end" description="add notif adn register" toReformat="true" toShortenFQNames="true">
+    <variable name="tp" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="em" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_CODE" value="true" />
     </context>
   </template>
 </templateSet>
