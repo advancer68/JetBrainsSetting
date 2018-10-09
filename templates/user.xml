@@ -458,7 +458,7 @@
       <option name="LUA_CODE" value="true" />
     </context>
   </template>
-  <template name="ifndf" value="$va$ = $va$ or $va1$&#10;$END$" description="reopened = reopened or false" toReformat="true" toShortenFQNames="true">
+  <template name="vdf" value="$va$ = $va$ or $va1$&#10;$END$" description="reopened = reopened or false" toReformat="true" toShortenFQNames="true">
     <variable name="va" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="va1" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
