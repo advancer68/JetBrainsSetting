@@ -465,4 +465,12 @@
       <option name="LUA_FUNCTION" value="true" />
     </context>
   </template>
+  <template name="tcvta" value="local $va$ =  table.convertAll($list$,function(item)&#10;&#9;&#9;return $ret$&#10;&#9;end)" description="local t = table.convertAll" toReformat="true" toShortenFQNames="true">
+    <variable name="va" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="list" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ret" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_FUNCTION" value="true" />
+    </context>
+  </template>
 </templateSet>
