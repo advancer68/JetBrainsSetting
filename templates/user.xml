@@ -473,4 +473,11 @@
       <option name="LUA_FUNCTION" value="true" />
     </context>
   </template>
+  <template name="vac" value="$va$ = ExcelConfigUtil.ColorTextById($va$,$va1$)" description="va = ExcelConfigUtil.ColorTextById" toReformat="true" toShortenFQNames="true">
+    <variable name="va" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="va1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_FUNCTION" value="true" />
+    </context>
+  </template>
 </templateSet>
