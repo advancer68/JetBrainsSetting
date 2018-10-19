@@ -480,4 +480,10 @@
       <option name="LUA_FUNCTION" value="true" />
     </context>
   </template>
+  <template name="ifret" value="if $va$ then return $va$ end" description="if value then return value end" toReformat="true" toShortenFQNames="true">
+    <variable name="va" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_FUNCTION" value="true" />
+    </context>
+  </template>
 </templateSet>
