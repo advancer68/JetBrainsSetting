@@ -524,4 +524,11 @@
       <option name="LUA_IF" value="false" />
     </context>
   </template>
+  <template name="vasm" value="self.$va1$  = msg.$va2$" description="self.$va1$  = msg.$va2$" toReformat="true" toShortenFQNames="true">
+    <variable name="va1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="va2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_FUNCTION" value="true" />
+    </context>
+  </template>
 </templateSet>
