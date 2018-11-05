@@ -510,4 +510,18 @@
       <option name="LUA_IF" value="true" />
     </context>
   </template>
+  <template name="anpri" value="---@private" description="---@private" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="LUA_CODE" value="true" />
+      <option name="LUA_FUNCTION" value="false" />
+      <option name="LUA_IF" value="false" />
+    </context>
+  </template>
+  <template name="anpub" value="---@public" description="---@public" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="LUA_CODE" value="true" />
+      <option name="LUA_FUNCTION" value="false" />
+      <option name="LUA_IF" value="false" />
+    </context>
+  </template>
 </templateSet>
