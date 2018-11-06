@@ -207,7 +207,7 @@
       <option name="LUA_IF" value="false" />
     </context>
   </template>
-  <template name="vav" value="---@type $tp$&#10;local view = transf:GetLuaView()" description="local view = transf:GetLuaView()" toReformat="true" toShortenFQNames="true">
+  <template name="vav" value="---@type $tp$&#10;local view = transf:GetLuaView()&#10;$END$" description="local view = transf:GetLuaView()" toReformat="true" toShortenFQNames="true">
     <variable name="tp" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="LUA_FUNCTION" value="true" />
@@ -542,6 +542,15 @@
   <template name="fcstevt1" value="---@param eventName UIEventE&#10;function c:SetEventName_$va$(eventName)&#10;&#9;self:SetButtonRegisterUIEvent(self.$va1$,eventName)&#10;end" description="function set event name va1" toReformat="true" toShortenFQNames="true">
     <variable name="va" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="va1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_CODE" value="true" />
+      <option name="LUA_FUNCTION" value="false" />
+      <option name="LUA_IF" value="false" />
+    </context>
+  </template>
+  <template name="fcevt" value="---OnClick_btnClick&#10;---@param transf UnityEngine.Transform&#10;function c:OnClick_$va$(transf)&#10;&#9;$END$self:RegisterEvent(UIEventE.$evt$,self.OnClick_$va$)&#10;end" description="fc OnClick_$va$ RegisterEvent" toReformat="true" toShortenFQNames="true">
+    <variable name="va" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="evt" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="LUA_CODE" value="true" />
       <option name="LUA_FUNCTION" value="false" />
