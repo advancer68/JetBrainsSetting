@@ -531,4 +531,21 @@
       <option name="LUA_FUNCTION" value="true" />
     </context>
   </template>
+  <template name="fcstevt" value="---@param eventName UIEventE&#10;function c:SetEventName_$va$(eventName)&#10;&#9;self:SetButtonRegisterUIEvent(self.$va$,eventName)&#10;end" description="function set event name" toReformat="true" toShortenFQNames="true">
+    <variable name="va" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_CODE" value="true" />
+      <option name="LUA_FUNCTION" value="false" />
+      <option name="LUA_IF" value="false" />
+    </context>
+  </template>
+  <template name="fcstevt1" value="---@param eventName UIEventE&#10;function c:SetEventName_$va$(eventName)&#10;&#9;self:SetButtonRegisterUIEvent(self.$va1$,eventName)&#10;end" description="function set event name va1" toReformat="true" toShortenFQNames="true">
+    <variable name="va" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="va1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_CODE" value="true" />
+      <option name="LUA_FUNCTION" value="false" />
+      <option name="LUA_IF" value="false" />
+    </context>
+  </template>
 </templateSet>
