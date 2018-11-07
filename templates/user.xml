@@ -486,7 +486,7 @@
       <option name="LUA_FUNCTION" value="true" />
     </context>
   </template>
-  <template name="reg" value="--region $va$&#10;--endregion" description="define region" toReformat="true" toShortenFQNames="true">
+  <template name="reg" value="--region $va$&#10;$END$&#10;--endregion" description="define region" toReformat="true" toShortenFQNames="true">
     <variable name="va" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="LUA_CODE" value="true" />
