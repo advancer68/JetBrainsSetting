@@ -564,4 +564,14 @@
       <option name="LUA_FUNCTION" value="true" />
     </context>
   </template>
+  <template name="fcstt" value="---@param value number&#10;function c:Set$va1$(value)&#10;&#9;local str = String.Format(&quot;{0}{1}&quot;,id2string($va3$),num2string(value))&#10;&#9;self.txt$va2$:SetText(str)&#10;end" description="funcation set text format" toReformat="true" toShortenFQNames="true">
+    <variable name="va1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="va3" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="va2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_CODE" value="true" />
+      <option name="LUA_FUNCTION" value="false" />
+      <option name="LUA_IF" value="false" />
+    </context>
+  </template>
 </templateSet>
