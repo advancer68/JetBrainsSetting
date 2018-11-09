@@ -574,4 +574,10 @@
       <option name="LUA_IF" value="false" />
     </context>
   </template>
+  <template name="fcfget" value="---@param value fun(index:number):ArenaCombatRecMsg&#10;function c:Set$va$Getter(value)&#10;&#9;self.$va$Getter = value&#10;end" description="set value function getter" toReformat="true" toShortenFQNames="true">
+    <variable name="va" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_FUNCTION" value="true" />
+    </context>
+  </template>
 </templateSet>
